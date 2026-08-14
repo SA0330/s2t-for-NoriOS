@@ -32,6 +32,7 @@ if config["device"] == -1:
     for i in range(pa.get_device_count()):
         info = pa.get_device_info_by_index(i)
         print(f"设备 {i}: {info['name']}, 最大输入通道: {info['maxInputChannels']}")
+    time.sleep(10)
     sys.exit()
     
 print("程序启动成功，可在config.json文件里修改录音按键(control_key)，打断按键(stop_key)，退出按键(quit_key)的值")
