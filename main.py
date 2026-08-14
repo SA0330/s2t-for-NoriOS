@@ -9,7 +9,7 @@ import pyautogui
 import pyperclip
 import winsound
 
-model = WhisperModel("faster-whisper-small", device="cpu", compute_type="int8")
+model = WhisperModel("small", device="cpu", compute_type="int8")
 chunk = 1024
 format = pyaudio.paInt16
 channels = 1
